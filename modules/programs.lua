@@ -2,11 +2,11 @@
 ---- MY PROGRAMS ----
 ---------------------
 
-local terminal        = "kitty"
-local fileManager     = "nautilus"
-local menu            = "wofi"
-local ipc             = "qs -c noctalia-shell ipc call"
-local codeEditor      = "code"
-local internetBrowser = "firefox"
-local noteEditor      = "obsidian"
-local webApp          = "gtk-launch"
+terminal        = "kitty"
+fileManager     = "dolphin"
+menu            = "wofi"
+--ipc             = "qs -c noctalia-shell ipc call"
+codeEditor      = "code"
+internetBrowser = "firefox"
+noteEditor      = "obsidian"
+webApp          = "gtk-launch"

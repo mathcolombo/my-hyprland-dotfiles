@@ -11,27 +11,27 @@ local mainMod = "SUPER"
 local appMainMod = mainMod .. " + SHIFT"
 
 --- Noctalia ---
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"))
-hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. " settings toggle"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. " wallpaper toggle"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
-hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
+-- hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
+-- hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"))
+-- hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. " settings toggle"))
+-- hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. " wallpaper toggle"))
+-- hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
+-- hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
 
 -- Plugins --
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(ipc .. " plugin:screen-toolkit annotate"))
-hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(ipc .. " plugin:clipper toggle"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(ipc .. " plugin:screen-toolkit annotate"))
+-- hl.bind(mainMod .. " + v", hl.dsp.exec_cmd(ipc .. " plugin:clipper toggle"))
 
 -- Media Keys --
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume increase"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume decrease"),      { locked = true, repeating = true })
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd(ipc .. " volume muteOutput"),     { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd(ipc .. " brightness increase"),                  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd(ipc .. " brightness decrease"),                  { locked = true, repeating = true }) 
+-- hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume increase"), { locked = true, repeating = true })
+-- hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume decrease"),      { locked = true, repeating = true })
+-- hl.bind("XF86AudioMute",        hl.dsp.exec_cmd(ipc .. " volume muteOutput"),     { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd(ipc .. " brightness increase"),                  { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd(ipc .. " brightness decrease"),                  { locked = true, repeating = true }) 
 
 --- System ---
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 
 -- Swap Windows --
@@ -49,11 +49,11 @@ hl.bind(mainMod .. " + CTRL + down", hl.dsp.window.resize({ x=0, y=15, relative=
 --- Apps ---
 hl.bind(appMainMod .. " + C", hl.dsp.exec_cmd(codeEditor))
 hl.bind(appMainMod .. " + B", hl.dsp.exec_cmd(internetBrowser))
-hl.bind(appMainMod .. " + N", hl.dsp.exec_cmd(noteEditor))
+-- hl.bind(appMainMod .. " + N", hl.dsp.exec_cmd(noteEditor))
 
 --- Web Apps ---
-hl.bind(appMainMod .. " + M", hl.dsp.exec_cmd(webApp .. " WebApp-YoutubeMusic5128.desktop"))
-hl.bind(appMainMod .. " + W", hl.dsp.exec_cmd(webApp .. " WebApp-WhatsApp5071.desktop"))
+-- hl.bind(appMainMod .. " + M", hl.dsp.exec_cmd(webApp .. " WebApp-YoutubeMusic5128.desktop"))
+-- hl.bind(appMainMod .. " + W", hl.dsp.exec_cmd(webApp .. " WebApp-WhatsApp5071.desktop"))
 
 --- Default Hyprland ---
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))

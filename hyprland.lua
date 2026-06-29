@@ -9,7 +9,13 @@
 -- Create your files separately and then require them like this:
 -- require("myColors")
 
-
+require("modules.autostart")
+require("modules.environments")
+require("modules.programs")
+require("modules.input")
+require("modules.keybindings")
+require("modules.monitors")
+require("modules.looknfell")
 
 -----------------------
 ----- PERMISSIONS -----
